@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Signup from "@/AuthModules/signup";
 import Login from "@/AuthModules/login";

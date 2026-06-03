@@ -1,4 +1,5 @@
-import next from "next";
+"use client";
+
 function Login() {
     return (
         <>

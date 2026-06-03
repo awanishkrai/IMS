@@ -1,3 +1,5 @@
+"use client";
+
 function Signup() {
     return (
         <div className="max-w-md rounded-3xl bg-white p-6 shadow-lg shadow-slate-200">

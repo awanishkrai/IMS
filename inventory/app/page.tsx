@@ -1,3 +1,4 @@
+"use client";
 import Header from "@/reusable mofules/Header";
 import Footer from "@/reusable mofules/Footer";
 import LandingPage from "@/reusable mofules/LandingPage";
