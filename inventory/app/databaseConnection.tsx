@@ -1,5 +1,4 @@
 //postgres database connection file
-
 let Pool: any;
 try {
 	// Use require to avoid TS compile errors when module is missing at type-check time

@@ -1,6 +1,6 @@
 import  pool from '../app/databaseConnection';
 
-async function registerUser(username: string,password: string,email: string){
+async function registerUser(username: string,password: string,email: string,role: string){
     if(!username || !password || !email){
         console.error('All fields are required')
         return { success: false, message: 'All fields are required' };
@@ -12,7 +12,7 @@ async function registerUser(username: string,password: string,email: string){
             console.error('User already exists')
             return { success: false, message: 'User already exists' };
         }
-        const query='Insert into users (username,password,email) valuse ($1,$2,$3) returning id';
+        const query='Insert into users (username,password,email,role) valuse ($1,$2,$3,$4) returning id';
         const result=await client.query(query,[username,password,email]);
         return { success: true, message: 'User registered successfully', userId: result.rows[0].id };
     } catch (error) {
